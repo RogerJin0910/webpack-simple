@@ -1,6 +1,12 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div id="homepage">
+    <img src="../../assets/logo.png">
+    <p>
+      <router-link to="/docs">Docs</router-link>
+    </p>
+    <h1>\{{ msg }}</h1>
+    <h2 class="title">\{{ title }}</h2>
+    <div class="content">\{{ content }}</div>
   </div>
 </template>
 
@@ -8,7 +14,7 @@
 import { mapActions, mapGetters } from 'vuex'
 
 export default {
-  name: 'app',
+  name: 'homepage',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -37,30 +43,5 @@ export default {
 </script>
 
 <style{{#sass}} lang="scss"{{/sass}}>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>

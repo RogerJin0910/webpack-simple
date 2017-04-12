@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-DOCKER_REPO_DAO_CLOUD=daocloud.io/baixing
-
-IMAGENAME_DEV='{{name}}-dev'
-IMAGENAME_STG='{{name}}-staging'
-IMAGENAME_PRO='{{name}}-pro'
